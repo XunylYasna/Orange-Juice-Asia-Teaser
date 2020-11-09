@@ -1,0 +1,16 @@
+{
+    "name": "Orange Juice Asia || Independent Label & Artist Collective",
+    "short_name": "Orange Juice Asia",
+    "description": "Independent Label & Artist Collective",
+    "theme_color": "#000",
+    "background_color": "#ED8F31",
+    "pathPrefix": null,
+    "icon": "/src/assets/logos/OrangeJuice ICON BLACK 8pt.png",
+    "social": {
+        "facebook": "https://www.facebook.com/orangejuiceasia/",
+        "instagram": "https://www.instagram.com/orangejuiceasia/",
+        "spotify": "https://open.spotify.com/artist/2u7xZP39dtED9EuRX9MUwu",
+        "soundcloud": "https://soundcloud.com/orangejuiceasia",
+        "email": "marco@orangjuice.asia"
+    }
+}

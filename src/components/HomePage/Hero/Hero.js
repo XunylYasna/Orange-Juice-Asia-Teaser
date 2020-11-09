@@ -1,19 +1,25 @@
 import React from "react"
+import styled from "styled-components"
 
-import { FlexContainer } from "../../../utils"
 
-import TitlePart from "./TitlePart"
-import HeroImage from "./HeroImage"
+import logoGraphic from "../../../assets/logos/Black.gif"
 
 export default function Hero() {
   return (
-    <FlexContainer
-      justifyContent={"space-between"}
-      flexHeight={"90vh"}
-      overflow={"hidden"}
-    >
-      <TitlePart />
-      <HeroImage />
-    </FlexContainer>
+    <Landing>
+      <img src={logoGraphic} draggable={false}></img>
+    </Landing>
   )
 }
+
+const Landing = styled.section`
+  background-color: var(--color-primary);
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img{
+      height: 128px;
+      width: 128px;
+  }
+`

@@ -1,48 +1,19 @@
 module.exports = {
   siteMetadata: {
-    title: `Ashfaq`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Orange Juice Asia`,
+    description: `Independent Label & Artist Collective`,
+    author: `Spektrum Design Co. - Lynux Ansay`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-transition-link`,
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
-        fonts: [
-          `Acme`,
-          `Montserrat\:400,500,700`,
-          `Poppins\:300,400,700`,
-          `Alegreya Sans\:300,400,700,900`,
-          `Alegreya Sans SC\:300,400,700,900`,
-        ],
-        display: "swap",
-      },
-    },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Acme`,
-          },
-          {
-            family: `Montserrat`,
-            variants: [`400`, `500`, `700`],
-          },
-          {
-            family: `Poppins`,
-            variants: [`300`, `400`, `700`],
-          },
-          {
-            family: `Alegreya Sans`,
-            variants: [`300`, `400`, `700`, `900`],
-          },
-          {
-            family: `Alegreya Sans SC`,
-            variants: [`300`, `400`, `700`, `900`],
-          },
-        ],
+        custom: {
+          families: ["Helvetica Neue, Bebas Neue, League Gothic, Helvetica"],
+          urls: ["/fonts/fonts.css"],
+        },
       },
     },
     {
@@ -63,13 +34,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Orange Juice Asia Website`,
+        short_name: `OJA Website`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#ED8F31`,
+        theme_color: `#ED8F31`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/OrangeJuice ICON White on Orange.png`, // This path is relative to the root of the site.
       },
     },
     {

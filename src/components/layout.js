@@ -8,13 +8,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
-import Header from "./header"
-import Nav from "./global/Navbar/Nav"
+import GlobalStyle from '../globals.css.js';
 
 import styled from "styled-components"
-import { Footer } from "../utils"
-// import "./layout.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -29,8 +25,7 @@ const Layout = ({ children }) => {
 
   return (
     <LayoutWrapper>
-      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-      <Nav />
+      <GlobalStyle />
       <div
         style={{
           // margin: `0 auto`,
@@ -42,14 +37,6 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <Footer>
-          © {new Date().getFullYear()}, Built with 💙  By
-          <span style={{marginLeft: "10px"}}>
-            <a href="https://ashfaqkabir.com" target="_blank">
-              Ashfaq Kabir
-            </a>
-          </span>
-        </Footer>
       </div>
     </LayoutWrapper>
   )
@@ -64,6 +51,12 @@ const LayoutWrapper = styled.div`
   padding: 0;
   box-sizing: border-box;
   overflow: hidden;
+  max-height: 100vh;
+  background-color: var(--color-primary);
+  h1, p{
+    font-family: var(--ff-primary);
+  }
+  
 `
 
 export default Layout
