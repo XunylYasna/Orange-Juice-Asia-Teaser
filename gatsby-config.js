@@ -12,7 +12,7 @@ module.exports = {
       options: {
         custom: {
           families: ["Helvetica Neue, Bebas Neue, League Gothic, Helvetica"],
-          urls: ["/fonts/fonts.css"],
+          urls: [`${__dirname}/src/assets/fonts/fonts.css`],
         },
       },
     },
@@ -36,7 +36,7 @@ module.exports = {
       options: {
         name: `Orange Juice Asia Website`,
         short_name: `OJA Website`,
-        start_url: `/`,
+        start_url: `https://orangejuice.asia/`,
         background_color: `#ED8F31`,
         theme_color: `#ED8F31`,
         display: `minimal-ui`,

@@ -42,8 +42,7 @@ const Form = () => {
         <span>
           <AniLink paintDrip to="/" duration={1} hex="#000">
             Take me back I'm not cool enough
-        </AniLink>
-          <div></div>
+          </AniLink>
         </span>
       </div>
     </FormContainer>
@@ -61,30 +60,42 @@ const FormContainer = styled.section`
     margin: auto;
     margin-top: 0;
     flex-direction: column;
-
     span{
-      transition: all 0.5s ease-in-out;
-      div{
-        height: 1px;
-        background-color: var(--G300);
-        width: 80%;
-        margin: auto;
-        margin-top: 2px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        vertical-align: center;
+        text-align: center;
+
+        
+        a {
+          color: var(--G400);
+          font-size: 0.8rem;
+          font-family: var(--ff-primary);
+          font-weight: 600;
+
+          position: relative;
+          display: inline-block;
+          text-decoration: none;
+
+          &::after {
+            position: absolute;
+            left: 0;
+            content: '';
+            width: 100%;
+            height: 1px;
+            background: var(--G400);
+            transform: scale(0, 1);
+            transition: transform .3s;
+            margin-top: 0.9rem ;
+            transform-origin: center top;  
+          }
+
+          &:hover::after {
+              transform: scale(1, 1);
+            }
+        }
       }
-    }
-
-    a{
-      transition: all 0.5s ease-in-out;
-      font-family: var(--ff-primary);
-      text-decoration: none;
-      color: var(--G400);
-      font-size: 0.8rem;
-      white-space: nowrap;
-    }
-
-    a:hover{
-      letter-spacing: 1.5px;
-    }
   }
   form{
     max-width: 250px;
@@ -125,7 +136,7 @@ const FormContainer = styled.section`
           left: 0;
           transform: translateY(-50%);
           transition: all ease-in 0.25s;
-          color: var(--G300);
+          color: var(--G400);
           font-family: var(--ff-primary);
           font-weight: 300;
         }
@@ -165,7 +176,7 @@ const FormContainer = styled.section`
           &:focus, &:not(:placeholder-shown){
             + label{
               top: -35%;
-              color: var(--G300);
+              color: var(--G400);
             }
           }
         }

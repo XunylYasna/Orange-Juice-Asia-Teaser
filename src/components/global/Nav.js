@@ -22,34 +22,54 @@ const NavWrapper = styled.nav`
   div{
     display: flex;
     h2{
-      vertical-align: middle;
-      align-self: center;
-      transition: letter-spacing 0.5s ease-in-out;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-align: center;
+      display: flex;
       
-      
-      span{
-        padding-bottom: 0.2rem;
-        border-bottom: 1px solid var(--G300);
-      }
-      a{
-        transition: all 0.5s ease-in-out;
 
-        font-family: var(--ff-primary);
-        font-weight: 600;
-        font-size: 0.8rem;
-        color: var(--G300);
-        text-decoration: none;
-        padding-left: 15px;
-        padding-right: 15px;
+      span{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        vertical-align: center;
+        text-align: center;
+
+        
+        a {
+          color: var(--G400);
+          font-size: 0.8rem;
+          font-family: var(--ff-primary);
+          font-weight: 600;
+
+          position: relative;
+          display: inline-block;
+          text-decoration: none;
+
+          &::after {
+            position: absolute;
+            left: 0;
+            content: '';
+            width: 100%;
+            height: 1px;
+            background: var(--G400);
+            transform: scale(0, 1);
+            transition: transform .3s;
+            margin-top: 0.9rem ;
+            transform-origin: center top;  
+          }
+
+          &:hover::after {
+              transform: scale(1, 1);
+            }
+        }
       }
     }
 
     h2:hover{
       a{
-        transition: all 0.5 ease-in-out;
-
-        letter-spacing: 2px;
-        /* padding-left: 30px; */
+        
       }
     }
 

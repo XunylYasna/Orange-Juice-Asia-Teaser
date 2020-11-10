@@ -10,7 +10,7 @@ import Footer from "../components/global/Footer"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Coming Soon" />
     <Nav title="COMING SOON">
       <h2><span>
         <AniLink paintDrip to="/login" duration={1} hex="#000">

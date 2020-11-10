@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 
-import logoGraphic from "../../../assets/logos/Black.gif"
+import logoGraphic from "../../../assets/logos/OJA Logo GIF Final.gif"
 
 export default function Hero() {
   return (
