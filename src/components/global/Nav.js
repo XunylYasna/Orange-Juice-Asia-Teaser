@@ -67,12 +67,6 @@ const NavWrapper = styled.nav`
       }
     }
 
-    h2:hover{
-      a{
-        
-      }
-    }
-
     h1{
       vertical-align: middle;
       align-self: center;

@@ -40,7 +40,7 @@ module.exports = {
         background_color: `#ED8F31`,
         theme_color: `#ED8F31`,
         display: `minimal-ui`,
-        icon: `src/images/OrangeJuice ICON White on Orange.png`, // This path is relative to the root of the site.
+        icon: `src/images/OrangeJuiceCircle.png`, // This path is relative to the root of the site.
       },
     },
     {
